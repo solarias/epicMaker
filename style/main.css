@@ -387,7 +387,7 @@ hr {
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
         font-size: 15px; } }
-			.tile.tile-128 .tile-inner.item1 {
+			.tile.tile-2048 .tile-inner.item1 {
 				background-image: url('../images/item1.png');
 			}
 			.tile.tile-2048 .tile-inner.item2 {
