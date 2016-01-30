@@ -341,20 +341,27 @@ hr {
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
     background-image: url('../images/crystal_2.png');
+	background-size:100%;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
     background-image: url('../images/crystal_4.png');
+	background-size:100%;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
-    background-image: url('../images/crystal_8.png');}
+    background-image: url('../images/crystal_8.png');
+	background-size:100%;}
   .tile.tile-16 .tile-inner {
-    background-image: url('../images/crystal_16.png');}
+    background-image: url('../images/crystal_16.png');
+	background-size:100%;}
   .tile.tile-32 .tile-inner {
-    background-image: url('../images/crystal_32.png');}
+    background-image: url('../images/crystal_32.png');
+	background-size:100%;}
   .tile.tile-64 .tile-inner {
-    background-image: url('../images/crystal_64.png');}
+    background-image: url('../images/crystal_64.png');
+	background-size:100%;}
   .tile.tile-128 .tile-inner {
     background-image: url('../images/crystal_128.png');
+	background-size:100%;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -362,6 +369,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
     background-image: url('../images/crystal_256.png');
+	background-size:100%;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -369,6 +377,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
     background-image: url('../images/crystal_512.png');
+	background-size:100%;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -376,6 +385,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
     background-image: url('../images/crystal_1024.png');
+	background-size:100%;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -389,18 +399,23 @@ hr {
         font-size: 15px; } }
 			.tile.tile-2048 .tile-inner.item1 {
 				background-image: url('../images/item1.png');
+				background-size:100%;
 			}
 			.tile.tile-2048 .tile-inner.item2 {
 				background-image: url('../images/item2.png');
+				background-size:100%;
 			}
 			.tile.tile-2048 .tile-inner.item3 {
 				background-image: url('../images/item3.png');
+				background-size:100%;
 			}
 			.tile.tile-2048 .tile-inner.item4 {
 				background-image: url('../images/item4.png');
+				background-size:100%;
 			}
 			.tile.tile-2048 .tile-inner.item5 {
 				background-image: url('../images/item5.png');
+				background-size:100%;
 			}
   .tile.tile-super .tile-inner {
     font-size: 30px; }
