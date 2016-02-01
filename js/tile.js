@@ -20,17 +20,17 @@ var mergeSound = [
 	new Audio("./sound/merge.mp3")
 ];
 for (var i=0;i<mergeSound.length-1; i++) {
-	mergeSound[i].volume = 0.5;
+	mergeSound[i].volume = 0.2;
 }
 //에픽 사운드
 var epicSound = new Audio("./sound/epic.mp3");
-	epicSound.volume = 0.5;
+	epicSound.volume = 0.2;
 //승리 사운드
 var victorySound = new Audio("./sound/victory.mp3");
-	victorySound.volume = 0.5;
+	victorySound.volume = 0.2;
 //게임오버 사운드
 var gameoverSound = new Audio("./sound/gameover.mp3");
-	gameoverSound.volume = 0.5;
+	gameoverSound.volume = 0.2;
 
 //합성 스프라이트
 var autoEffect;
@@ -41,7 +41,7 @@ function animation(target,frameWidth,now,limit,speed) {
 			animation(target,frameWidth,now - frameWidth,limit,speed);
 		}, speed);
 	} else {
-		target.style.display = "none";
+		target.style.visibility = "hidden";
 	}
 }
 //이미지 미리 불러오기

@@ -172,12 +172,21 @@ GameManager.prototype.move = function (direction) {
 				  //에픽 사운드 출력
 				  epicSound.play();
 				  //에픽 출현 이펙트
-				  console.log(tile);
-				  document.getElementById("sprite").style.left = ((tile.x * (107 + 14)) - 219).toString() + "px";
-				  document.getElementById("sprite").style.top = ((tile.y * (107 + 14)) - 403).toString() + "px";
-				  document.getElementById("sprite").style.display = "block";
+				  var temp = {
+					  w:document.querySelectorAll('.tile-inner')[0].offsetWidth,
+					  h:document.querySelectorAll('.tile-inner')[0].offsetHeight,
+					  g:(document.querySelectorAll('.grid-container')[0].offsetWidth - document.querySelectorAll('.tile-inner')[0].offsetWidth*4)/3,
+					  sprite:document.querySelector("#sprite"),
+					  /*스프라이트 너비&높이 : 임의의 위치이므로 직접 입력, 2배로 넓혔으므로 기존 이미지 수치의 2배*/
+					  sprite_w:144*2,
+					  sprite_h:233*2
+				  }
+				  console.log(temp);
+				  temp["sprite"].style.left = (tile.x * (temp["w"] + temp["g"]) + temp["g"] - temp["sprite_w"] + temp["w"]/2).toString() + "px";
+				  temp["sprite"].style.top = (tile.y * (temp["w"] + temp["g"]) + temp["g"] - temp["sprite_h"] + temp["h"]/2).toString() + "px";
+				  temp["sprite"].style.visibility = "visible";
 				  setTimeout(function() {
-					animation(document.getElementById("sprite"),682,0,-8182,100);
+					animation(temp["sprite"],682,0,-8182,100);
 				  }, 100);
 				  //승리 판정
 				  self.won = true;

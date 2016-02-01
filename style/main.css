@@ -571,8 +571,8 @@ hr {
     padding: 0 20px; }
 
   h1.title {
-    font-size: 27px;
-    margin-top: 15px; }
+    font-size: 25px;
+    line-height: 200%; }
 
   .container {
     width: 280px;
@@ -587,13 +587,13 @@ hr {
     margin-bottom: 10px; }
 
   .game-intro {
-    width: 55%;
+    width: 60%;
     display: block;
     box-sizing: border-box;
     line-height: 1.65; }
 
   .restart-button {
-    width: 42%;
+    width: 40%;
     padding: 0;
     display: block;
     box-sizing: border-box;
@@ -611,7 +611,7 @@ hr {
     -ms-user-select: none;
     -ms-touch-action: none;
     touch-action: none;
-    background: #bbada0;
+    background: #0075AA;
     border-radius: 6px;
     width: 280px;
     height: 280px;
@@ -807,5 +807,5 @@ hr {
 	background-image:url('../images/epic_appear.png');
 	background-size:8182px 792px;
 	
-	display:none;
+	visibility:hidden;
 }
